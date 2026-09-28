@@ -1,0 +1,158 @@
+.back-btn {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.product-detail-image {
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.product-detail-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-detail-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.sku,
+.marca,
+.category {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+.precio-lista {
+  font-size: 0.95rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.description {
+  margin: 2rem 0;
+}
+
+.description h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.specs {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.purchase-section {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  margin: 2rem 0;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quantity label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.quantity input {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.additional-info {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.additional-info p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .product-detail-image {
+    min-height: 300px;
+  }
+
+  .purchase-section {
+    flex-direction: column;
+  }
+
+  .btn-large {
+    width: 100%;
+  }
+}
